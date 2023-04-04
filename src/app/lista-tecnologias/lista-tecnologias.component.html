@@ -1,0 +1,11 @@
+<p>lista-tecnologias works!</p>
+<app-detalles-tecnologias
+  [usuario]="newUsuario"
+  (nuevaTecnologia)="addTec($event)"
+></app-detalles-tecnologias>
+
+<ul>
+  <li *ngFor="let tec of listaTecnologias">
+    {{ tec }}
+  </li>
+</ul>
